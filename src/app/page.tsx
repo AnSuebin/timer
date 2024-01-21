@@ -1,9 +1,7 @@
-import Image from 'next/image';
+import Footer from '@/components/layout/Footer';
+import Header from '@/components/layout/Header';
+import MobileContainer from '@/components/container/MobileContainer';
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      timer
-    </main>
-  );
+  return <MobileContainer Header={<Header />} Footer={<Footer />}></MobileContainer>;
 }
