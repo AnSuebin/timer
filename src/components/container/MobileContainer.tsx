@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 
 import { useWindowSize } from '@/hooks/useWindowSize';
@@ -22,7 +23,7 @@ const MobileContainer: React.FC<React.PropsWithChildren<Props>> = ({
   return (
     <div className={'min-h-screen w-screen bg-white'}>
       {MetaHead}
-      <header className="fixed top-0 left-1/2 translate-x-[-50%] z-[999] w-mobileWidth max-mobile:w-full">
+      <header className="fixed top-0 left-1/2 translate-x-[-50%] z-[999] w-mobileWidth max-mobile:w-full ">
         {Header}
       </header>
       <main
